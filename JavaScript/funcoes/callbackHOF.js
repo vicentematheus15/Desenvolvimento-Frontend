@@ -12,10 +12,10 @@ function divisao(num1, num2){
     return num2 / num1
 }
 
-const resultadoSoma = calcular(3, 8, soma)
+const resultadoSoma = calcular(3, 8, soma) //soma é um callback
     console.log("Resultado da soma: ", resultadoSoma);
 
-const resultadoDivisao = calcular(32, 8, divisao)
+const resultadoDivisao = calcular(32, 6, divisao) //soma é um callback
     console.log("Resultado da divisão: ", resultadoDivisao);
 
 
