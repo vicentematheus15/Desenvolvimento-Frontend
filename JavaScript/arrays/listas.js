@@ -12,3 +12,12 @@ const listaDeNomes = [
   'José'
 ];
 
+console.log(nome1);
+console.log(nome2);
+console.log(nome3);
+console.log(nome4);
+console.log(nome5);
+
+
+
+console.log(listaDeNomes);
