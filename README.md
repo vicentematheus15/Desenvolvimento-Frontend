@@ -1,2 +1,2 @@
 # Desenvolvimento-Frontend
-Curso de desenvolvimento em Frontend
+Curso de desenvolvimento em Frontend na Alura
