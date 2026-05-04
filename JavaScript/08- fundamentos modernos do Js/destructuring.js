@@ -15,7 +15,7 @@ console.log(idade);
 
 //também posso usar isso para passar como parametro de alguma função, somente atributos especificos de um objeto
 
-function saudacao({ nome, idade }) {
+function saudacao({ nome, idade }) { //aqui eu recebo o objeto pessoa, mas só me importo com os atributos nome e idade desse objeto
     console.log('Olá, ', nome);
     if(idade > 18){
         console.log('Maior de idade');
