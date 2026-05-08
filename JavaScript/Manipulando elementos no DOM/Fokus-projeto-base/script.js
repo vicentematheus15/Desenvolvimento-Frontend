@@ -11,6 +11,8 @@ const musica = new Audio('./sons/luna-rise-part-one.mp3');
 const audioPlay = new Audio('./sons/play.wav');
 const audioPause = new Audio('./sons/pause.mp3');
 const audioTempoFinalizado = new Audio('./sons/beep.mp3');
+const iniciarOuPausarBt = document.querySelector('#start-pause span');
+const iniciarOuPausarBtIcon = document.querySelector('.app__card-primary-butto-icon')
 
 let tempoDecorridoEmSegundos = 5
 let intervaloId = null
@@ -91,9 +93,13 @@ function iniciarOuPausar(){
     }
     audioPlay.play()
     intervaloId = setInterval(contagemRegressiva, 1000)
+    iniciarOuPausarBt.textContent = "Pausar"
+    iniciarOuPausarBtIcon.setAttribute('src', './imagens/pause.png')
 }
 
 function zerar(){
     clearInterval(intervaloId)
+    iniciarOuPausarBt.textContent = "Começar"
+    iniciarOuPausarBtIcon.setAttribute('src', './imagens/play_arrow.png')
     intervaloId = null
 }
