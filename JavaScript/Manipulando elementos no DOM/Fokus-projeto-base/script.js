@@ -79,7 +79,6 @@ const contagemRegressiva = () => {
     }
     tempoDecorridoEmSegundos -= 1
     console.log('Tempo: ' + tempoDecorridoEmSegundos)
-    console.log('Id: ' + intervaloId)
 }
 
 startPauseBt.addEventListener('click', iniciarOuPausar)
