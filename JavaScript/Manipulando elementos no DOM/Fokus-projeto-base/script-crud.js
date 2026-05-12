@@ -32,6 +32,8 @@ function criarElementoTarefa(tarefa){
     li.append(svg)
     li.append(paragrafo)
     li.append(botao)
+
+    return li
 }
 
 btnAdicionarTarefa.addEventListener('click', () => {
@@ -48,5 +50,5 @@ formAdicionarTarefa.addEventListener('submit', (evento) => {
 })
 
 tarefas.array.forEach(tarefa => {
-    
+    criarElementoTarefa(tarefa)
 });
