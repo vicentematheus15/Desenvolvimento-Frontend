@@ -4,7 +4,7 @@ const btnAdicionarTarefa = document.querySelector('.app__button--add-task');
 const formAdicionarTarefa = document.querySelector('.app__form-add-task');
 const textArea = document.querySelector('.app__form-textarea');
 
-const tarefas = []
+const tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
 
 function criarElementoTarefa(tarefa){
     const li = document.createElement('li');
@@ -46,3 +46,7 @@ formAdicionarTarefa.addEventListener('submit', (evento) => {
     tarefas.push(tarefa)
     localStorage.setItem('tarefas', JSON.stringify(tarefas))
 })
+
+tarefas.array.forEach(tarefa => {
+    
+});
