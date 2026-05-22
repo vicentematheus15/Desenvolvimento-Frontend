@@ -49,6 +49,7 @@ formAdicionarTarefa.addEventListener('submit', (evento) => {
     localStorage.setItem('tarefas', JSON.stringify(tarefas))
 })
 
-tarefas.array.forEach(tarefa => {
-    criarElementoTarefa(tarefa)
+tarefas.forEach(tarefa => {
+    const elementoTarefa = criarElementoTarefa(tarefa)
+    ulTarefas.append(elementoTarefa)
 });
