@@ -25,6 +25,7 @@ function criarElementoTarefa(tarefa) {
     paragrafo.classList.add('app__section-task-list-item-description')
 
     const botao = document.createElement('button')
+    botao.classList.add('app_button-edit')
     const imagemBotao = document.createElement('img')
 
     imagemBotao.setAttribute('src', '/imagens/edit.png')
