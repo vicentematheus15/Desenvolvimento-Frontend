@@ -22,6 +22,7 @@ function criarElementoTarefa(tarefa) {
 
     const paragrafo = document.createElement('p')
     paragrafo.textContent = tarefa.descricao
+    paragrafo.classList.add('app__section-task-list-item-description')
 
     const botao = document.createElement('button')
     const imagemBotao = document.createElement('img')
